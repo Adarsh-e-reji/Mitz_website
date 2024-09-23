@@ -1,0 +1,165 @@
+
+.img {
+    width: 150px;
+    height: auto;
+    
+}
+
+body {
+    color: white;
+    margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: ""; /* Required for pseudo-element */
+    position: absolute; /* Positioning for full cover */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("C:/Users/adarsh/Downloads/abstract-black-futuristic-background.jpg"); /* Background image */
+    background-size: cover; /* Cover the entire body */
+    background-position: center; /* Center the image */
+    filter: blur(8px); /* Adjust blur intensity */
+    z-index: -1; /* Place behind content */
+}
+
+.container {
+    position: relative; /* To ensure content is above the background */
+    z-index: 1; /* Bring content to the front */
+    padding: 20px; /* Add some padding */
+}
+
+
+header {
+    width: 100%; /* Ensure header fills the width */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;    
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(7, 45, 38);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 50%;
+}
+
+a {
+    font-family: Times, serif;
+    font-size: 25px;
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px; /* Adjust spacing between links */
+}
+
+a:hover {
+    color: rgb(48, 193, 179)
+}
+label {
+    display: block; /* Changed to block for consistent layout */
+    margin-bottom: 5px; /* Space between label and input */
+    color: #ffffff; 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Max width for the form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Smooth corners */
+    background-color: #0e5420; /* Form background color */
+    text-align: left; /* Left-align text */
+}
+
+input, textarea {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 10px; /* Inner spacing */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4CAF50; 
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease;
+    margin-top: 10px; 
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em; 
+    display: none;
+}
+
+.contact-section {
+    padding: 40px 20px;
+    background-color: rgb(10, 51, 43); 
+    text-align: center;
+}
+.team-header h4 {
+    font-size: 24px;
+    color: #c5c5c5; 
+    text-align: center;
+}
+
+.team-header h1 {
+    font-size: 36px;
+    color: #c5c5c5; 
+    text-align: center;
+}
+.footer {
+    background-color: rgb(7, 45, 38); 
+    color: white; 
+    padding: 20px; /* Padding for spacing */
+    text-align: center; /* Center the text */
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto; /* Center the content */
+}
+
+.social-media a {
+    margin: 0 10px; /* Space between links */
+    color: white; 
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+    color: #4CAF50; /* Underline on hover */
+}
+
+.company-info p {
+    margin: 5px 0; /* Space between paragraphs */
+}

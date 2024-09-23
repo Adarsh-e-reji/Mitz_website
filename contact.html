@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mitz</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="C:\Users\adarsh\Downloads\logoi.png"
+    />
+  </head>
+  <body style="background-color: rgb(10, 51, 43)">
+    <header>
+      <div class="logo">
+        <img
+          src="C:\Users\adarsh\Downloads\mitzLogo.png"
+          class="img"
+          alt="Mitz Logo"
+        />
+      </div>
+      <nav>
+        <a href="C:\Users\adarsh\OneDrive\Desktop\MITZ\a-1\home.html">Home</a>
+        <a href="C:\Users\adarsh\OneDrive\Desktop\MITZ\a-1\about.html"
+          >About Us</a
+        >
+        <a href="C:\Users\adarsh\OneDrive\Desktop\MITZ\a-1\career.html"
+          >Careers</a
+        >
+        <a href="C:\Users\adarsh\OneDrive\Desktop\MITZ\a-1\contact.html"
+          >Contact Us</a
+        >
+      </nav>
+    </header>
+    <div class="team-header">
+        <h4>Send us a message</h4>
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; color: white;">We’re here to help you solve your enterprise data problems and management hazzles</h1>
+    </div>
+    <section class="contact-section">
+        <div id="apply-form" class="apply-form">
+      <div class="contact-form">
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <div id="name-error" class="error" style="display: none">
+            Please enter your name.
+          </div>
+
+          <label for="company">Company:</label>
+          <input type="text" id="company" required />
+          <div id="company-error" class="error" style="display: none">
+            Please enter your company name.
+          </div>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+          <div id="email-error" class="error" style="display: none">
+            Please enter a valid email address.
+          </div>
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" required />
+          <div id="subject-error" class="error" style="display: none">
+            Please enter a subject.
+          </div>
+
+          <label for="message">Message:</label>
+          <textarea id="message" rows="4" required></textarea>
+          <div id="message-error" class="error" style="display: none">
+            Please enter your message.
+          </div>
+
+          <button type="button" onclick="sendMessage()">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      function sendMessage() {
+        // Clear previous error messages
+        document.getElementById("name-error").style.display = "none";
+        document.getElementById("company-error").style.display = "none";
+        document.getElementById("email-error").style.display = "none";
+        document.getElementById("subject-error").style.display = "none";
+        document.getElementById("message-error").style.display = "none";
+
+        // Validate fields
+        const name = document.getElementById("name");
+        const company = document.getElementById("company");
+        const email = document.getElementById("email");
+        const subject = document.getElementById("subject");
+        const message = document.getElementById("message");
+        let valid = true;
+
+        if (!name.value.trim()) {
+          document.getElementById("name-error").style.display = "block";
+          valid = false;
+        }
+        if (!company.value.trim()) {
+          document.getElementById("company-error").style.display = "block";
+          valid = false;
+        }
+        if (!email.checkValidity()) {
+          document.getElementById("email-error").style.display = "block";
+          valid = false;
+        }
+        if (!subject.value.trim()) {
+          document.getElementById("subject-error").style.display = "block";
+          valid = false;
+        }
+        if (!message.value.trim()) {
+          document.getElementById("message-error").style.display = "block";
+          valid = false;
+        }
+
+        if (valid) {
+          alert("Message sent successfully!");
+          document.getElementById("contact-form").reset(); // Reset the form after submission
+        }
+      }
+    </script>
+     <footer class="footer">
+        <div class="footer-content">
+          <div class="social-media">
+            <a href="https://www.youtube.com/@mitz_ai/featured" target="_blank"
+              >YouTube</a
+            >
+            <a href="https://www.linkedin.com/company/mitz-ai/" target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://www.instagram.com/mitz_ai/" target="_blank"
+              >Instagram</a
+            >
+          </div>
+          <div class="company-info">
+            <p>1 SBC3-5, Third Floor, Thapasya Building,</p>
+            <p>Infopark Campus, Infopark, Kochi,</p>
+            <p>Kakkanad, Kerala 682042</p>
+            <p>Phone: +91-9744997077</p>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>

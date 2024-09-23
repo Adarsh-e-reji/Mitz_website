@@ -1,0 +1,189 @@
+
+.img {
+    width: 150px;
+    height: auto;
+    
+}
+
+body {
+    color: white;
+    margin: 0; /* Remove default body margin */
+}
+
+header {
+    width: 100%; /* Ensure header fills the width */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;    
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(7, 45, 38);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    width: 50%;
+}
+
+a {
+    font-family: Times, serif;
+    font-size: 25px;
+    color: white; 
+    text-decoration: none; 
+    margin: 0 15px;
+}
+
+a:hover {
+    color: rgb(48, 193, 179)
+}
+
+
+.mission-vision-values {
+    width: 80%; /* Adjust the width as needed */
+    margin: 40px auto; /* Center the section */
+    text-align: center; /* Center align text */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.grid-item {
+    background-color: #07534a; /* Background color for grid items */
+    color: white; /* Text color */
+    padding: 20px; /* Inner spacing */
+    border-radius: 8px; /* Smooth corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.grid-item h3 {
+    font-size: xx-large; /* Adjust font size */
+    margin-bottom: 10px; /* Spacing below the heading */
+}
+
+.grid-item p {
+    font-size: large; /* Adjust font size */
+    line-height: 1.5; /* Line spacing */
+}
+.grid-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    opacity: 0.7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: #146f3cdb;
+}
+
+
+/*pics*/
+
+.team-section {
+    padding: 40px 20px;
+    background-color: rgb(10, 51, 43);  /* Light background for contrast */
+    text-align: center;
+    margin-top: 40px;
+}
+
+.team-header h4 {
+    font-size: 24px;
+    color: #c5c5c5; /* Darker color for the subtitle */
+}
+
+.team-header h1 {
+    font-size: 36px;
+    color: #c5c5c5; /* Accent color for the title */
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the team members */
+    margin-top: 20px;
+}
+
+.team-member {
+    background-color: #ffffff; /* White background for team member cards */
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    width: 200px;
+
+
+}
+
+.team-member:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5)
+}
+
+.team-photo {
+    width: 100%; /* Fill the entire width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Smooth corners */
+    transition: filter 0.3s ease;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+   
+}
+
+/*main*/
+.position {
+    font-size: 16px; 
+    color: transparent; /* Initially hide text */
+    bottom: 10px; /* Position above the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust centering */
+    transition: color 0.3s ease; /* Smooth transition for visibility */
+}
+
+.team-member:hover .position {
+    color: black; /* Change text color to black on hover */
+}
+.team-header {
+    background-color: #5d2b2b; /* Dark background color */
+    width: 100%; /* Full width */
+    padding: 3px; /* Space inside the header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/*FOOTER*/
+.footer {
+    background-color: rgb(7, 45, 38); /* Dark background */
+    color: white; /* White text */
+    padding: 20px; /* Padding for spacing */
+    text-align: center; /* Center the text */
+}
+
+.footer-content {
+    max-width: 800px; /* Max width for content */
+    margin: auto; /* Center the content */
+}
+
+.social-media a {
+    margin: 0 10px; /* Space between links */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+    color: #4CAF50; /* Underline on hover */
+}
+
+.company-info p {
+    margin: 5px 0; /* Space between paragraphs */
+}
