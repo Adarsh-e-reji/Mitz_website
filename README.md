@@ -1,6 +1,6 @@
 # Company Website Clone
 
-This is a clone of the official website for Mitz . The project is built using HTML, CSS, and JavaScript, showcasing the core functionalities and design elements of the original website(https://www.mitz.ai/).
+This is a clone of the official website for Mitz . The project is built using HTML, CSS, and JavaScript, showcasing the core functionalities and design elements of the original website (https://www.mitz.ai/).
 
 
 ## Features
